@@ -1,0 +1,33 @@
+button {
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-file {
+  color: rgb(104, 104, 104);
+  padding: 20px;
+  border: thin solid grey;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-file h2 {
+  text-align: center;
+  color: rgb(16, 16, 16);
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  border: none;
+  background-color: black;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 45px;
+}
