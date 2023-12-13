@@ -20,7 +20,7 @@ body {
   text-align: center;
   border: thin solid grey;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 40px;
 }
 
@@ -31,4 +31,11 @@ body {
 
 .result ul li {
   list-style: none;
+}
+
+.button-file-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }

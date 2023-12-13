@@ -53,16 +53,18 @@ function App() {
 
   return (
     <div>
-      <ButtonFile
-        text="Качете CSV файл с поръчките от сайта"
-        type="file"
-        onHandleChange={handleFileOrdersChange}
-      />
-      <ButtonFile
-        text="Качете CSV файл с пратките от Econt"
-        type="file"
-        onHandleChange={handleEcontOrdersChange}
-      />
+      <div className="button-file-container container">
+        <ButtonFile
+          text="Качете CSV файл с поръчките от сайта"
+          type="file"
+          onHandleChange={handleFileOrdersChange}
+        />
+        <ButtonFile
+          text="Качете CSV файл с пратките от Econt"
+          type="file"
+          onHandleChange={handleEcontOrdersChange}
+        />
+      </div>
       <ButtonCheck onCheck={handleOnCheck} />
       {clicked && orderIds.length > 0 && econtIds.length > 0 && (
         <div className="result container">
