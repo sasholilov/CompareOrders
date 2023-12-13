@@ -44,10 +44,6 @@ function App() {
     } else {
       diffArray = orderIds.filter((x) => !econtIds.includes(x));
     }
-
-    console.log(econtIds.length);
-    console.log(orderIds.length);
-    console.log(diffArray);
     setResult(diffArray);
   };
 
