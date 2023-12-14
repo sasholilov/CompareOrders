@@ -68,12 +68,17 @@ function App() {
       <ButtonCheck onCheck={handleOnCheck} />
       {clicked && orderIds.length > 0 && econtIds.length > 0 && (
         <div className="result container">
-          <h2>Поръчки за проверка</h2>
-          {result.map((e) => (
-            <ul>
-              <li>{e}</li>
-            </ul>
-          ))}
+          <h2 className="result-title">
+            Поръчки за проверка{" "}
+            <div className="result-count">
+              <span>{result.length}</span>
+            </div>
+          </h2>
+          <div className="span-wrapper">
+            {result.map((e) => (
+              <span>{e}</span>
+            ))}
+          </div>
         </div>
       )}
     </div>

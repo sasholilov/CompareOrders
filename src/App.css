@@ -17,7 +17,6 @@ body {
 }
 
 .result {
-  text-align: center;
   border: thin solid grey;
   border-radius: 8px;
   margin-top: 20px;
@@ -29,8 +28,11 @@ body {
   text-align: center;
 }
 
-.result ul li {
-  list-style: none;
+.span-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .button-file-container {
@@ -38,4 +40,23 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.result-title {
+  position: relative;
+}
+
+.result-count span {
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  background-color: #c6c6c6;
+  top: -20px;
+  left: 60.2%;
+  color: black;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 50%;
 }
