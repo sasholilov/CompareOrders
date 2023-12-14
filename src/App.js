@@ -31,7 +31,11 @@ function App() {
       const data = splitStringToArray(reader.result);
       const newDataArray = data.map((a) => a.split("\t"));
       newDataArray.shift();
-      const arrayWithOrdersId = newDataArray.map((o) => o[42].slice(10, 15));
+      const arrayWithOrdersId = newDataArray.map((o) => {
+        if (!!Number(o[42].slice(10, 15))) {
+          return o[42].slice(10, 15);
+        } else return o[42];
+      });
       setEcontIds(arrayWithOrdersId);
     };
   }
